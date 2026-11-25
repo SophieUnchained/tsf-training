@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Contact | Maple Lane Gardens | Training site</title>
+  <!-- STEP: paste the GTM <head> snippet here, as high in the <head> as you can -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- STEP: paste the GTM <body> (noscript) snippet here, straight after <body> -->
+
+  <div class="banner">Training site for GA4 and GTM practice. Maple Lane Gardens is not a real business.</div>
+
+  <header class="site-header">
+    <a class="logo" href="index.html">Maple Lane Gardens</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Ask for a quote</h1>
+      <p>Tell us a little about your garden and we'll get back to you. (This is a practice form: nothing you type is sent or stored.)</p>
+
+      <!--
+        The fields have no "name" attributes on purpose, so nothing typed ends up in the
+        thank-you page address (and so never reaches GA4). Never send form answers to GA4.
+      -->
+      <form id="quote-form" class="quote-form" action="thanks.html" method="get">
+        <label for="f-name">Your name</label>
+        <input id="f-name" type="text" required>
+
+        <label for="f-email">Email</label>
+        <input id="f-email" type="email" required>
+
+        <label for="f-type">Type of garden</label>
+        <select id="f-type" required>
+          <option value="">Choose one</option>
+          <option>Patio</option>
+          <option>Borders</option>
+          <option>Balcony</option>
+          <option>Not sure yet</option>
+        </select>
+
+        <label for="f-message">Anything else?</label>
+        <textarea id="f-message" rows="4"></textarea>
+
+        <button type="submit" class="button" id="quote-submit">Send my request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Maple Lane Gardens is a made-up business on a training site. Nothing here is for sale.</p>
+  </footer>
+</body>
+</html>
